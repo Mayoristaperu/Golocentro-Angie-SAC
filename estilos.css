@@ -1,0 +1,840 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content {
+    min-height: 100px; 
+    background-color: rgba(255, 255, 0, 0.473);
+    background-clip: content-box;
+}
+
+.titulo{
+    display: none;
+}
+
+.swiper-button-prev::after{
+    font-size: 25px;
+    margin-top: -75px; 
+    margin-top: 60px; 
+
+
+}
+
+.swiper-button-next::after{
+    font-size: 25px;
+    margin-top: -75px; 
+    margin-top: 60px; 
+
+}
+
+.swiper-button-next {
+    color: #DB241B;
+}
+
+.swiper-button-prev {
+    color: #DB241B;
+
+}
+
+.swiper-pagination-bullet {
+    background-color:#D3D2D2;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #DB241B;
+}
+
+.menu{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+}
+
+.menu-1{
+    margin-right: 350px;
+
+}
+
+.menu-2{
+    align-items: center;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: black;
+    display: block;
+    font-weight: bold;
+
+}
+
+.menu .navbar ul li a:hover{
+    color: #DB241B;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 30px;
+    color: #DB241B;
+
+}
+
+.menu label{
+    cursor:pointer;
+    display: none;
+}
+
+
+.slider{
+    display: flex;
+    align-items: center;
+    margin-top: -40px; 
+
+}
+
+.slider-txt{
+    margin-left: 205px;
+    width: 50%;
+    margin: 180px;
+}
+
+.slider-txt h1{
+    font-size: 65px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.slider-txt p{
+    font-size: 18px;
+    color: #DB241B;
+}
+
+.botones {
+    margin-top: 50px;
+}
+
+.slider-img{
+    width: 50%;
+}
+
+.slider-img img{
+    width: 400px;
+    float: left;
+    margin-top: -20px; 
+
+
+}
+
+.products{
+    background-color: white;
+}
+
+.tabs{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 0px;
+    
+}
+
+.tabs label{
+    width: 15%;
+    order: 1;
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+    cursor: pointer;
+    color: #A7A7A7;
+    font-weight: 700;
+    transition: background ease 0.2s;
+}
+
+.tabs .tab{
+    order: 99;
+    flex-grow: 1;
+    width: 100%;
+    display: none;
+    padding-top: 25px;
+    
+}
+
+.tabs input[type="radio"]{
+    display: none;
+    
+}
+
+.tabs input[type="radio"]:checked + label{
+    border-bottom: 2px solid #DB241B;
+    color: black;
+}
+.tabs input[type="radio"]:checked + label + .tab {
+    display: block;
+}
+
+.product{
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    margin: 0 10px;
+
+    
+}
+
+.product-img {
+    width: 50%;
+    text-align: left;
+    
+}
+
+.product-img h4{
+    display: inline-block;
+    padding: 5px 7px;
+    line-height: 15px;
+    color: black;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 800;
+    border: 2px solid #555555;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.product-img img{
+    width: 150px;
+    height: 120px;
+
+}
+
+.product-txt{
+    width: 50%;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.product-txt h4{
+    color:black;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.product-txt p{
+    color: #A7A7A7;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.product-txt span{
+    font-size: 18px;
+    font-weight: 800;
+}
+
+
+.info.container{
+    margin-top: -80px;
+
+}
+
+.info{
+    padding: 100px 0px;
+    display: flex;
+    align-items: center;
+
+}
+
+.info-img{
+    width: 50%;
+}
+
+.info-img img{
+    width: 420px;
+    height: 250px;
+}
+
+.info-txt{
+    width: 50%;
+
+}
+
+.info-txt h2{
+    font-size: 60px;
+    color: #DB241B;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.info-txt p{
+    font-size: 18px;
+    color: #DB241B;
+    margin-bottom: 50px;
+}
+
+
+.btn-2{
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: #DB241B;
+    color: #A7A7A7;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 80px;
+}
+
+.btn-2:hover{
+    background-color: #DB241B;
+}
+
+.beneficios{
+    padding: 30px;
+    text-align: center;
+
+}
+
+.beneficios-img{
+    max-width: 100%;
+    height: auto;
+    margin-left: 730px;
+
+}
+
+.beneficios-img img{
+    width: 420px;
+    height: 250px;
+
+}
+
+.beneficios-txt{
+    width: 50%;
+    margin-top: -350px; 
+    margin-bottom: 60px;
+
+}
+
+.beneficios-txt h2{
+    font-size: 60px;
+    color: #DB241B;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    text-align: left; 
+
+
+}
+
+.beneficios-txt p{
+    font-size: 18px;
+    color: #DB241B;
+    margin-bottom: 25px;
+    text-align: left; 
+
+}
+
+.informacion{
+    padding: 100px 0px;
+    background-color: #05f0f818;
+}
+
+.informacion h2{
+    font-size: 60px;
+    color: #DB241B;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.informacion-txt{
+    display: flex;
+    justify-content: space-between;
+}
+
+.txt{
+    color: #DB241B;
+}
+
+.txt h4{
+    font-size: 18px;
+    color: #555555;
+    margin-bottom: 30px;
+}
+
+.txt p{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*codigo del chat*/
+
+
+
+
+
+
+.chat-container {
+    display: none; /* Inicialmente, oculta el contenedor del chat */
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    position: fixed;
+    bottom: 50px;
+    right: 0px; /* Puedes ajustar la posición horizontal según tus necesidades */
+    flex-direction: column;
+    background-color: #f0f0f0;
+    z-index: 1001; /* Asegura que el contenedor del chat esté por encima del icono de la imagen */
+}
+
+.chat-mensaje {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column-reverse; /* Para alinear el icono en la parte inferior */
+    justify-content: flex-end; /* Alinea el icono en la parte derecha */
+    align-items: flex-end; /* Alinea el icono en la parte inferior */
+    position: fixed;
+    bottom: 20px; /* Ajusta la posición vertical en la parte inferior según tus necesidades */
+    right: 20px; /* Ajusta la posición horizontal en la parte derecha según tus necesidades */
+    z-index: 1000; /* Asegura que el icono de la imagen esté por encima de otros elementos */
+}
+
+
+
+
+button#toggleButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    /* Ajusta el tamaño del botón y, por lo tanto, de la imagen */
+    width: 65px; /* Puedes ajustar el ancho según tus necesidades */
+    height: 50px; /* Puedes ajustar la altura según tus necesidades */
+    margin-right: -10px;   /* Restablece el margen derecho a 0 (puedes ajustar según sea necesario) */
+
+
+}
+
+button#toggleButton img {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor (botón) */
+    height: auto; /* Mantiene la proporción original de la imagen */
+}
+
+.chat-header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.chat-box {
+    max-height: 350px;
+    overflow-y: scroll;
+    padding: 10px;
+    flex-grow: 1; /* Permite que el cuadro de chat crezca y ocupe el espacio disponible */
+
+}
+
+.chat-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 200px; /* Ajusta la altura según sea necesario */
+}
+
+.message-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0px; /* Ajusta el espacio entre las opciones */
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+}
+
+button {
+    padding: 8px;
+    margin-left: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+
+.message-options button {
+    flex: 1;
+    margin: 5px;
+}
+
+.chat-container {
+    /* ...otros estilos... */
+    display: flex; /* Asegura que el contenedor se muestre como un contenedor flexible por defecto */
+}
+
+
+.user-message {
+    text-align: right;
+    background-color: #3498db; /* Color de fondo azul para mensajes del usuario */
+    color: white; /* Color del texto blanco para mensajes del usuario */
+    padding: 8px;
+    border-radius: 8px;
+    margin: 5px 0;
+    margin-left: auto; /* Mueve el mensaje hacia la derecha */
+
+}
+
+.bot-message {
+    background-color: #3498db; /* Color de fondo azul para mensajes del chatbot */
+    color: white; /* Color del texto blanco para mensajes del chatbot */
+    padding: 8px;
+    border-radius: 8px;
+    margin: 5px 0;
+    margin-right: auto;
+    font-size: 14px;
+    max-width: 70%; /* Ajusta el ancho máximo para que sea más corto */
+    align-self: flex-end; /* Coloca el mensaje del usuario a la derecha y del bot a la izquierda */
+
+
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.user-message, .bot-message {
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+
+
+.message-time {
+    font-size: 12px; /* Tamaño del texto de la hora */
+    color: #888; /* Color de la hora */
+
+}
+
+.user-container {
+    text-align: right;
+    margin-left: auto; /* Mueve el mensaje y la hora hacia la derecha */
+}
+
+.bot-container {
+    text-align: left;
+    margin-right: auto; /* Mueve el mensaje y la hora hacia la izquierda */
+}
+
+
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.typing-animation {
+    overflow: hidden;
+    display: inline-block;
+    animation: typing 2s steps(40, end);
+}
+
+
+
+
+@media (max-width: 991px) {
+
+
+    .content {
+        margin-top: -100px; 
+
+    }
+
+    .titulo {
+        display: block;
+        font-size: 13px; 
+        margin-top: 35px;
+        color:rgba(12, 138, 177, 0.473);
+        margin-left: 75px;
+    }
+
+    .menu{
+        padding: 20px;
+        justify-content: space-between;
+        filter: invert(100%); 
+
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #A7A7A7;
+        display: none;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .header-content{
+        padding: 30px;
+        margin-top: 30px;
+    }
+
+    .slider{
+        flex-direction: column;
+        margin-top: 30px; 
+
+    }
+
+    .slider-txt{
+        width: 95%;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+
+    .slider-txt h1{
+        font-size: 45px;
+        margin-top: -45px;
+
+    }
+
+    .slider-txt p{
+        font-size: 15px;
+    }
+
+    .btn-1{
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+
+    .slider-img{
+        width: 95%;
+        text-align: center;
+    }
+
+    .slider-img img{
+        display: block;
+        margin: 0 auto;
+        margin-top: -20px;
+        margin-left: -35px;
+
+    }
+
+    .swiper-button-prev::after{
+        margin-top: 150px; 
+    
+    }
+    
+    .swiper-button-next::after{
+        margin-top: 150px; 
+    }
+
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets,.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction{
+        bottom: -7px;
+    }
+
+    .product{
+        margin-top: 60px;
+        margin-left: 10px;
+
+    }
+
+    .product-txt{
+        margin-left: 40px;
+
+    }
+
+    .tabs{
+        padding: 50px 30px;
+
+    }
+
+    .tabs label{
+        width: 33%;
+        background-color: rgba(255, 255, 0, 0.473);
+
+    }
+
+    .info.container{
+        margin-top: 20px;
+    
+    }
+
+    .info{
+        margin-top: 50px;
+        padding: 30px;
+        flex-direction: column;
+
+    }
+
+    .info-img{
+        margin-left: -120px;
+    }
+
+    .info-img img{
+        width: 170%; 
+        height: auto; 
+
+    }
+
+    .info-txt{
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .info-txt h2{
+        font-size: 34px;
+
+    }
+
+    .info-txt p{
+        font-size: 16px;
+        margin-bottom: 100px;
+
+    }
+
+    .linea-diagonal {
+        display: none;
+    
+    }
+
+    .btn-1{
+        font-size: 16px;
+    }
+
+
+    .beneficios{
+        padding: 30px;
+        margin-top: -50px;
+
+    }
+
+    .beneficios-img{
+        margin-left: -0px;
+        
+    }
+
+    .beneficios-img img{
+        width: 70%; 
+        height: auto; 
+        
+    }
+
+    .beneficios-txt{
+        width: 100%;
+        margin-top: 10px;
+        
+        
+    }
+
+    .beneficios-txt h2{
+        font-size: 34px;
+        text-align: center;
+
+
+    }
+
+    .beneficios-txt p{
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .informacion{
+        padding: 30px;
+        text-align: center;
+    }
+
+    .informacion-info h2{
+        font-size: 40px;
+        margin-bottom: 15px;
+        text-align: center;
+
+    }
+
+    .informacion-txt{
+        flex-direction: column;
+    }
+
+
+}
