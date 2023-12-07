@@ -605,6 +605,33 @@ button {
 }
 
 
+.whatsapp-button {
+    position: fixed;
+    bottom: 10px;
+    left: 15px; /* Cambiado a "left" para que esté en la parte izquierda */
+    z-index: 1000;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row; /* Cambiado a "row" para alinear el ícono a la izquierda */
+    align-items: center; /* Alinea los elementos en el centro verticalmente */
+}
+
+.whatsapp-button {
+    width: 65px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: 50px; /* Mantiene la proporción original de la imagen */
+    margin-right: -15px;   /* Restablece el margen derecho a 0 (puedes ajustar según sea necesario) */
+
+}
+
+.whatsapp-button img {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor (botón) */
+    height: auto; /* Mantiene la proporción original de la imagen */
+}
+
 
 
 @media (max-width: 991px) {
