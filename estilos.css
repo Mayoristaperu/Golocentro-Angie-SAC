@@ -792,12 +792,12 @@ input[type="submit"]:hover {
     }
 
     .swiper-button-prev::after{
-        margin-top: 150px; 
+        margin-top: 120px; 
     
     }
     
     .swiper-button-next::after{
-        margin-top: 150px; 
+        margin-top: 120px; 
     }
 
     .swiper-horizontal > .swiper-pagination-bullets,
