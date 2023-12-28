@@ -179,7 +179,7 @@ function getBotResponse(option) {
     // Implementa lógica para obtener la respuesta del bot según la opción seleccionada
     const responses = {
         '¿Que dias atienden?': 'Atendemos todos los dias desde las 7:00 AM a 6:00 PM',
-        '¿Que venden?': 'Golocentro Angie SAC ofrecer una gran variedad de productos al por mayor para satisfacer las necesidades de tu negocio',
+        '¿Que venden?': 'Golocentro Angie SAC ofrece una gran variedad de productos al por mayor para satisfacer las necesidades de tu negocio',
         '¿Cuantos años cumple la empresa?': 'Con más de 10 años de dedicación en la industria mayorista, Golocentro Angie SAC se ha convertido en sinónimo de calidad y confiabilidad',
         '¿Cuál es su secreto para el exito?': 'El éxito de Golocentro Angie SAC radica en nuestra dedicación a la calidad, la variedad y la satisfacción del cliente.'
     };
